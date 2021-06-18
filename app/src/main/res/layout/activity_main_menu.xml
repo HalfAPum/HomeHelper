@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    tools:context=".ui.main.MainActivity"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/chat_button"
+        style="@style/MainMenuLogoStyle"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/chat_logo"
+        app:layout_constraintEnd_toStartOf="@+id/fundraising_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        style="@style/MainMenuTextView"
+        android:text="@string/chat"
+        app:layout_constraintEnd_toStartOf="@+id/events_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chat_button" />
+
+    <ImageView
+        android:id="@+id/fundraising_button"
+        style="@style/MainMenuLogoStyle"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/fundraising_logo"
+        app:layout_constraintStart_toEndOf="@+id/chat_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        style="@style/MainMenuTextView"
+        android:text="@string/fundraising"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/news_button"
+        app:layout_constraintTop_toBottomOf="@+id/fundraising_button" />
+
+    <ImageView
+        android:id="@+id/news_button"
+        style="@style/MainMenuLogoStyle"
+        android:src="@drawable/news_logo"
+        app:layout_constraintEnd_toStartOf="@+id/events_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chat_button" />
+
+    <TextView
+        style="@style/MainMenuTextView"
+        android:text="@string/news"
+        app:layout_constraintEnd_toStartOf="@+id/profile_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/news_button" />
+
+    <ImageView
+        android:id="@+id/events_button"
+        style="@style/MainMenuLogoStyle"
+        android:src="@drawable/events_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/news_button"
+        app:layout_constraintTop_toBottomOf="@+id/fundraising_button" />
+
+    <TextView
+        style="@style/MainMenuTextView"
+        android:text="@string/Events"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/accounting_button"
+        app:layout_constraintTop_toBottomOf="@+id/events_button" />
+
+    <ImageView
+        android:id="@+id/accounting_button"
+        style="@style/MainMenuLogoStyle"
+        android:src="@drawable/accounting_logo"
+        app:layout_constraintEnd_toStartOf="@+id/profile_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/news_button" />
+
+    <TextView
+        style="@style/MainMenuTextView"
+        android:text="@string/Accounting"
+        app:layout_constraintEnd_toStartOf="@+id/profile_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accounting_button"/>
+
+    <ImageView
+        android:id="@+id/profile_button"
+        style="@style/MainMenuLogoStyle"
+        android:src="@drawable/profile_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/accounting_button"
+        app:layout_constraintTop_toBottomOf="@+id/events_button" />
+
+
+    <TextView
+        style="@style/MainMenuTextView"
+        android:text="@string/Profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/accounting_button"
+        app:layout_constraintTop_toBottomOf="@+id/profile_button"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

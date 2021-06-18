@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/monthTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/HeaderText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.github.sundeepk.compactcalendarview.CompactCalendarView
+        android:id="@+id/compactcalendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:compactCalendarBackgroundColor="#fff"
+        app:compactCalendarCurrentDayBackgroundColor="#faa"
+        app:compactCalendarCurrentSelectedDayBackgroundColor="#dad"
+        app:compactCalendarMultiEventIndicatorColor="#dea"
+        app:compactCalendarTargetHeight="250dp"
+        app:compactCalendarTextColor="#000"
+        app:compactCalendarTextSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/monthTV" />
+</androidx.constraintlayout.widget.ConstraintLayout>

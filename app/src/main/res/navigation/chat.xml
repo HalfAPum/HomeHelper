@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chat"
+    app:startDestination="@id/porchFragment">
+
+    <fragment
+        android:id="@+id/porchFragment"
+        android:name="com.example.homehelper.ui.chat.porch.PorchFragment"
+        android:label="PorchFragment" />
+    <fragment
+        android:id="@+id/apartmentFragment"
+        android:name="com.example.homehelper.ui.chat.apartment.ApartmentFragment"
+        app:popUpTo="@id/porchFragment"
+        android:label="ApartmentFragment" />
+    <fragment
+        android:id="@+id/fundraisingFragment"
+        android:name="com.example.homehelper.ui.chat.fundraising.FundraisingFragment"
+        android:label="FundraisingFragment" />
+    <fragment
+        android:id="@+id/houseHolderFragment"
+        android:name="com.example.homehelper.ui.chat.householder.HouseHolderFragment"
+        android:label="HouseHolderFragment" />
+</navigation>

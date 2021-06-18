@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="#ffd">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="100dp"
+        >
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:contentDescription="@string/profile_image"
+            android:src="@drawable/profile_logo"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/change_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="@string/change_avatar"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_view"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/change_avatar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/about_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/about"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <Button
+                android:id="@+id/social_networks"
+                style="@style/ProfileButtons"
+                android:text="@string/social_networks"
+                app:layout_constraintTop_toBottomOf="@+id/about_info" />
+
+            <Button
+                android:id="@+id/chat_customization"
+                style="@style/ProfileButtons"
+                android:text="@string/chats_customization"
+                app:layout_constraintTop_toBottomOf="@+id/social_networks"/>
+
+            <Button
+                android:id="@+id/payment_info"
+                style="@style/ProfileButtons"
+                android:text="@string/payment_info"
+                app:layout_constraintTop_toBottomOf="@+id/chat_customization" />
+
+            <Button
+                android:id="@+id/exit_account"
+                style="@style/ProfileButtons"
+                android:text="@string/exit_account"
+                app:layout_constraintTop_toBottomOf="@+id/payment_info"/>
+
+            <Button
+                android:id="@+id/delete_account"
+                style="@style/ProfileButtons"
+                android:text="@string/delete_account"
+                app:layout_constraintTop_toBottomOf="@+id/exit_account"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

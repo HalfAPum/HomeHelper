@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Домашній помічник</string>
+    <string name="authText">Вхід</string>
+    <string name="loginText">Логін</string>
+    <string name="passwordText">Пароль</string>
+    <string name="login_button">Вхід</string>
+    <string name="register_button">Створити обліковий запис</string>
+    <string name="logo_description">Лого</string>
+    <string name="chat">Чат під\'їзду</string>
+    <string name="fundraising">Збір коштів</string>
+    <string name="news">Новини</string>
+    <string name="Events">Події</string>
+    <string name="Accounting">Сплата рахунуів</string>
+    <string name="Profile">Профіль</string>
+    <string name="Calendar">Календар</string>
+    <string name="event_view">Вигляд</string>
+    <string name="reason">Причина:</string>
+    <string name="duration">Тривалість:</string>
+    <string name="profile_image">Аватар профілю</string>
+    <string name="change_avatar">Змінити аватар</string>
+    <string name="about">Про себе</string>
+    <string name="social_networks">Соціальні мережі</string>
+    <string name="chats_customization">Кастомізація чатів</string>
+    <string name="payment_info">Платіжна інформація</string>
+    <string name="exit_account">Вийти з аккаунту</string>
+    <string name="delete_account">Видалення аккаунту</string>
+    <string name="register">Зарєєструватися</string>
+</resources>

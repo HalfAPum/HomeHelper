@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "461529655758",
+    "project_id": "home-helper-f375a",
+    "storage_bucket": "home-helper-f375a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461529655758:android:ccf63eb302790cc0d7a39f",
+        "android_client_info": {
+          "package_name": "com.example.homehelper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "461529655758-2gdig7t7l6d30ukish99p5nb7g8e70e5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDv0Vy5KfFDazmG0WZsWRTDtPzoX3Fiizc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "461529655758-2gdig7t7l6d30ukish99p5nb7g8e70e5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

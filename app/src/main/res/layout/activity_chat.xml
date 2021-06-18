@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/porch_button"
+            style="@style/SmallText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ebebeb"
+            android:text="Чат під'їзду" />
+
+        <Button
+            android:id="@+id/apartment_button"
+            style="@style/SmallText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="#ebebeb"
+            android:text="Чат дому" />
+
+        <Button
+            android:id="@+id/house_keeper_button"
+            style="@style/SmallText"
+            android:layout_width="0dp"
+            android:background="#ebebeb"
+            android:layout_marginStart="5dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Лист" />
+
+        <Button
+            android:id="@+id/collection_button"
+            style="@style/SmallText"
+            android:layout_width="0dp"
+            android:background="#ebebeb"
+            android:layout_marginStart="5dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Збір" />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:navGraph="@navigation/chat" />
+
+</LinearLayout>
